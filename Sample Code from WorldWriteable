@@ -16,7 +16,7 @@ def check_for_greeting(sentence):
 def respond(sentence):
 	""" Parse the user's inbound sentence and find candidate terms that make up a best-fit response """
   	cleaned = preprocess_text(sentence)
-  	parsed = starterbot(cleaned)
+  	parsed = Chatbot(cleaned)
   
   	# Loop through all the sentences, if more than one.
   	# This will help extract the most relevant response
